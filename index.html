@@ -4,24 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Shifumi</title>
 </head>
 <body>
+  <header>
+    <div>
+      <h1>Shifumi</h1>
+      <img src="https://pbs.twimg.com/profile_images/1062829511341834240/ZfotZ0Ka_400x400.jpg" alt="">
+    </div>
+    <p>Choose your destiny and see where it will take you</p>
+  </header>
 <!-- IMAGE DU SIGNE DE IA -->
-  <section>
-    <img id="IA">
+<section class="bg">
+  <section class="ia">
+    <h2>Your opponent</h2>
+    <div class="choix">
+      <img id="IA">
+    </div>
   </section>
+
+<!-- versus -->
+  <section>
+    <h1>VS</h1>
+  </section>
+
 <!-- IMAGE DE NOTRE SIGNE -->
   <section>
-    <img id="Nous">
-    <!-- <button onClick="onButtonClickPierre()">Pierre</button>
-    <button onClick="onButtonClickFeuille()">Feuille</button>
-    <button onClick="onButtonClickCideau()">Cideaux</button> -->
-    
-    <button onClick="onButtonClickPierre()" id="pierre">Pierre</button>
-    <button onClick="onButtonClickFeuille()" id="feuille">Feuille</button>
-    <button onClick="onButtonClickCideaux()" id="cideaux">Cideaux</button>
+    <div class="choix">
+      <img id="Nous">
+    </div>
+    <h2>You</h2>
+    <p>Make your choice</p>
+    <div>
+      <button onClick="onButtonClickPierre()">Rock</button>
+      <button onClick="onButtonClickFeuille()">Paper</button>
+      <button onClick="onButtonClickCiseaux()">Scissors</button>
+    </div>
   </section>
+
+  <!-- resultat -->
+  <section>
+    <h1>Results:</h1>
+    <h3 id="result">None</h3>
+    <h2 id="gamescore"></h2>
+    <p id="res-score"></p>
+  </section>
+</section>
+
 
   <script src="index.js"></script>
 </body>

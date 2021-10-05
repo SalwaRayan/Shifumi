@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Orbitron;
+}
+.bg{
+  background-image: url("../../../../Downloads/TdC75w.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* Header */
+
+header{
+  background: rgb(85, 29, 29);
+  color: white;
+}
+
+header img{
+  width: 80px;
+  height: fit-content;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+}
+header p {
+  text-align: center;
+  font-weight: 500;
+  font-size: larger;
+}
+
+
+/* IA */
+
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choix{
+  width: fit-content;
+  height: 240px;
+  border-radius: 50px;
+}
+.choix img{
+  height: 240px;
+}
+
+
+/* Button */
+
+button {
+  font-family: Orbitron;
+  width: 95px;
+  height: 32px;
+  background: none;
+  border: 4px, solid, black;
+  border-radius: 5px;
+  font-weight: 500;
+  margin: 15px 10px;
+}
