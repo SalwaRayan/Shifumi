@@ -46,11 +46,11 @@ section {
 
 .choix{
   width: fit-content;
-  height: 240px;
+  height: 150px;
   border-radius: 50px;
 }
 .choix img{
-  height: 240px;
+  height: 150px;
 }
 
 

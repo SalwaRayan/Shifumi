@@ -20,11 +20,13 @@ function onButtonClickPierre(){
   if (countYou >= 3 && countIA < 3){
     countYou = 0
     countIA = 0
-    result.innerHTML = "That's great! You won!"
+    result.innerHTML = ""
+    gameScore.innerHTML = "That's great! You won!"
   } else if (countYou < 3 && countIA >= 3){
     countYou = 0
     countIA = 0
-    result.innerHTML = "Boo-hoo! You lose!"
+    result.innerHTML = ""
+    gameScore.innerHTML = "Boo-hoo! You lose!"
   }
   setImageIA(random)
   score()
@@ -72,11 +74,13 @@ function onButtonClickCiseaux(){
   if (countYou >= 3 && countIA < 3){
     countYou = 0
     countIA = 0
-    result.innerHTML = "That's great! You won!"
+    result.innerHTML = ""
+    gameScore.innerHTML = "That's great! You won!"
   } else if (countYou < 3 && countIA >= 3){
     countYou = 0
     countIA = 0
-    result.innerHTML = "Boo-hoo! You lose!"
+    result.innerHTML = ""
+    gameScore.innerHTML = "Boo-hoo! You lose!"
   }
   setImageIA(random)
   score()
