@@ -6,7 +6,7 @@ var countYou = 0
 var countIA = 0
 
 function onButtonClickPierre(){
-  imageNous.setAttribute("src", "https://img-premium.flaticon.com/png/512/1867/premium/1867572.png?token=exp=1633447815~hmac=cbe9927961604b80bd945d6341de1374")
+  imageNous.setAttribute("src", "./NicePng_cartoon-rock-png_951765.png")
   var random = randomImage()
   if (random === 1){
     result.innerHTML = "It's a draw! Try again"
@@ -33,7 +33,7 @@ function onButtonClickPierre(){
 }
 
 function onButtonClickFeuille(){
-  imageNous.setAttribute("src", "https://img-premium.flaticon.com/png/512/3152/premium/3152875.png?token=exp=1633447333~hmac=ff774f49d217bc0e70a0b440e44edec5")
+  imageNous.setAttribute("src", "https://static.vecteezy.com/system/resources/previews/010/792/121/non_2x/text-box-cartoon-free-png.png")
   var random = randomImage()
   if (random === 1){
     result.innerHTML = "You win! Congratulation"
@@ -60,7 +60,7 @@ function onButtonClickFeuille(){
 }
 
 function onButtonClickCiseaux(){
-  imageNous.setAttribute("src", "https://img-premium.flaticon.com/png/512/732/premium/732457.png?token=exp=1633447365~hmac=c9a1754ee055a5089779e878d6969d33")
+  imageNous.setAttribute("src", "https://cdn-icons-png.flaticon.com/512/5604/5604391.png")
   var random = randomImage()
   if (random === 1){
     result.innerHTML = "You lose! Maybe next time"
@@ -97,11 +97,14 @@ function setImageIA(num){
   var imageIA = document.getElementById("IA")
 
   if (num === 1){
-    imageIA.setAttribute("src", "https://img-premium.flaticon.com/png/512/1867/premium/1867572.png?token=exp=1633447815~hmac=cbe9927961604b80bd945d6341de1374")
+    //  1 == Pierre
+    imageIA.setAttribute("src", "./NicePng_cartoon-rock-png_951765.png")
   } else if (num === 2) {
-    imageIA.setAttribute("src", "https://img-premium.flaticon.com/png/512/3152/premium/3152875.png?token=exp=1633447333~hmac=ff774f49d217bc0e70a0b440e44edec5")
+    // 2 == Feuille
+    imageIA.setAttribute("src", "https://static.vecteezy.com/system/resources/previews/010/792/121/non_2x/text-box-cartoon-free-png.png")
   } else {
-    imageIA.setAttribute("src", "https://img-premium.flaticon.com/png/512/732/premium/732457.png?token=exp=1633447365~hmac=c9a1754ee055a5089779e878d6969d33")
+    // 3 == Ciseaux
+    imageIA.setAttribute("src", "https://cdn-icons-png.flaticon.com/512/5604/5604391.png")
   }
 
 }
